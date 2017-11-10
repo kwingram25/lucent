@@ -1,0 +1,56 @@
+.holdings-group .ant-card-body {
+    padding: 12px;
+}
+
+.holdings-group-details, .holdings-group-stats {
+  height: 40px;
+}
+
+.holdings-group-icon {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-right: 16px;
+    float: left;
+}
+
+.holdings-group-header, .holdings-group-value {
+    float: left;
+    font-size: 1.5rem;
+}
+
+.holdings-group-header {
+  height: 40px;
+}
+
+.holdings-group-subheader, .holdings-group-quantity, .holdings-group-header-value {
+  font-size: 1rem;
+}
+
+.holdings-group-details {
+    /* height: 40px; */
+}
+
+.holdings-group-details > * {
+    display: inline-block;
+    line-height: 22px;
+}
+
+.holdings-group-stats > * {
+    line-height: 22px;
+    width: 100%;
+    text-align: right;
+}
+
+.ui.image.label .holding-icon {
+    display: inline-block;
+    vertical-align: top;
+    height: 2.1666em;
+    margin: -0.5833em 0.5em -0.5833em -0.5em;
+    border-radius: 0.28571429rem 0em 0em 0.28571429rem;
+    vertical-align: middle;
+    height: 2.1666em !important;
+    width: 2.1666em;
+    background: transparent;
+  }

@@ -1,0 +1,61 @@
+@import "../../../../styles/utils.less";
+
+.stat-base {
+  color: #000;
+}
+
+.stat-up {
+  animation: animation-up 1s ease-in;
+}
+
+.stat-down {
+  animation: animation-down 1s ease-in;
+}
+
+@keyframes animation-up {
+  0% { color: green }
+  100% { color: #000 }
+}
+
+@keyframes animation-down {
+  0% { color: red }
+  100% { color: #000 }
+}
+
+.graph-container-col {
+  height: 300px;
+
+  .recharts-responsive-container {
+    display: block;
+  }
+
+  .ui.loader {
+    display: none;
+  }
+
+  &.loading {
+    .recharts-responsive-container {
+      display: none;
+    }
+
+    .ui.loader {
+      display: block;
+    }
+  }
+}
+
+@media @lg {
+
+  .ui.statistic .value {
+    font-size: 2.8rem !important;
+  }
+}
+
+@media @md {
+  .ui.statistic.portfolio-value-total .value {
+    font-size: 1.2rem !important;
+  }
+  .graph-container-col {
+    height: 225px;
+  }
+}
